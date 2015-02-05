@@ -36,9 +36,12 @@ gulp.task('copy', function(){
         .pipe(gulp.dest(demo));
 });
 
+var deployOptions = {
+    cacheDir: 'demo'
+}
 gulp.task('deploy', function () {
-    return gulp.src('./demo/**/*')
-        .pipe(deploy());
+    return gulp.src('demo/**/*')
+        .pipe(deploy(deployOptions));
 });
 
 gulp.task('watch', function() {

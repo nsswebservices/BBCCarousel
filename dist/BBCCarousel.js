@@ -1,6 +1,6 @@
 /**
  * @name BBCCarousel: A jQuery plugin carousel based on the BBC homepage carousel
- * @version 0.1.0 Thu, 05 Feb 2015 12:07:05 GMT
+ * @version 0.1.0 Thu, 05 Feb 2015 12:16:34 GMT
  * @author mjbp
  * @license 
  * @url https://github.com/mjbp/BBC-Carousel/
