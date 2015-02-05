@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BBC Carousel</title>
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+	<link href="BBCCarousel.css" rel='stylesheet'>
+	<style>
+		* {margin:0;padding:0;font-family:lora, serif;}
+	</style>
+<head>
+<body>
+<section class="BBCCarousel">
+	<div class="BBCCarousel-mask">
+		<div class="BBCCarousel-car">
+			<div class="BBCCarousel-pane">
+				<img src="img/1.jpg" alt="" width="990" height="400">
+				<h1 class="BBCCarousel-pane-title">Loren ipsum</h1>
+			</div>
+			<div class="BBCCarousel-pane">
+				<img src="img/2.jpg" alt="" width="990" height="400">
+				<h1 class="BBCCarousel-pane-title recipe-title">Dolor sit amet</h1>
+			</div>
+			<div class="BBCCarousel-pane">
+				<img src="img/3.jpg" alt="" width="990" height="400">
+				<h1 class="BBCCarousel-pane-title recipe-title">consectetur adipiscing elit</h1>
+			</div>
+		</div>
+		<div class="BBCCarousel-arrows">
+			<button class="BBCCarousel-arrow BBCCarousel-arrow--previous" id="js-arrow-previous">Previous</button>
+			<button class="BBCCarousel-arrow BBCCarousel-arrow--next" id="js-arrow-next">Next</button>
+		</div>
+	</div>
+</section>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="BBCCarousel.js"></script>
+<script>
+	$(function(){
+		$('.BBCCarousel').BBCCarousel();
+	});
+</script>
+</body>
+</html>
